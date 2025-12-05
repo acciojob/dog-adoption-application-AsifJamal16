@@ -1,16 +1,101 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+    <meta charset="UTF-8">
+    <title>dog adoption application</title>
 
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f3f3f3;
+            display: flex;
+            justify-content: center;
+            padding-top: 40px;
+        }
+
+        .form-container {
+            background: white;
+            padding: 25px;
+            width: 350px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.15);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            text-transform: lowercase;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 14px;
+            text-transform: lowercase;
+        }
+
+        input[type="text"],
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 6px;
+        }
+
+        button, input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background: #222;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-transform: lowercase;
+        }
+
+        button:hover, input[type="submit"]:hover {
+            background: #333;
+        }
+    </style>
+</head>
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+    <div class="form-container">
+        <h2>dog adoption application</h2>
+
+        <form>
+
+            <label for="name">name</label>
+            <input type="text" id="name" placeholder="name">
+
+            <label for="phone">phone number</label>
+            <input type="text" id="phone" placeholder="phone number">
+
+            <label for="address">address</label>
+            <input type="text" id="address" placeholder="address">
+
+            <label>
+                <input type="checkbox" id="checkbox" value="Have you ever lived with a Dog before?">
+                have you ever lived with a dog before?
+            </label>
+            <br><br>
+
+            <label for="multiSelect">please select your preferred breeds</label>
+            <select id="multiSelect" multiple size="3">
+                <option value="labrador">labrador</option>
+                <option value="german shepherd">german shepherd</option>
+                <option value="pug">pug</option>
+            </select>
+
+            <input type="submit" id="submit" value="submit">
+
+        </form>
+    </div>
 
 </body>
-
 </html>

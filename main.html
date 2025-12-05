@@ -47,7 +47,7 @@
             margin-right: 6px;
         }
 
-        button, input[type="submit"] {
+        input[type="submit"] {
             width: 100%;
             padding: 10px;
             background: #222;
@@ -58,7 +58,7 @@
             text-transform: lowercase;
         }
 
-        button:hover, input[type="submit"]:hover {
+        input[type="submit"]:hover {
             background: #333;
         }
     </style>
@@ -71,18 +71,19 @@
         <form>
 
             <label for="name">name</label>
-            <input type="text" id="name" placeholder="name">
+            <input type="text" id="name" placeholder="Name">
 
             <label for="phone">phone number</label>
-            <input type="text" id="phone" placeholder="phone number">
+            <input type="text" id="phone" placeholder="Phone Number">
 
             <label for="address">address</label>
-            <input type="text" id="address" placeholder="address">
+            <input type="text" id="address" placeholder="Address">
 
             <label>
-                <input type="checkbox" id="checkbox" value="Have you ever lived with a Dog before?">
+                <input type="checkbox" id="checkbox" type="checkbox" value="Have you ever lived with a Dog before?">
                 have you ever lived with a dog before?
             </label>
+
             <br><br>
 
             <label for="multiSelect">please select your preferred breeds</label>
@@ -92,7 +93,7 @@
                 <option value="pug">pug</option>
             </select>
 
-            <input type="submit" id="submit" value="submit">
+            <input type="submit" id="submit" value="Submit">
 
         </form>
     </div>
